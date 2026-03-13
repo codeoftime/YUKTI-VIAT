@@ -1309,3 +1309,122 @@ animation:beat 1s infinite;
 opacity:0.8;
 font-size:13px;
 }
+
+/* FACULTY SECTION */
+
+.coordinator-section{
+
+text-align:center;
+padding:80px 10%;
+
+}
+
+.coordinator-section h2{
+
+margin-bottom:40px;
+
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+
+/* FIRST ROW */
+
+.coordinator-top4{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+margin-bottom:40px;
+
+}
+
+
+/* SECOND ROW */
+
+.coordinator-bottom2{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+justify-items:center;
+
+}
+
+
+/* CARD DESIGN */
+
+.coordinator-card{
+
+background:rgba(255,255,255,0.06);
+
+padding:25px;
+
+border-radius:18px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+transition:0.4s;
+
+}
+
+.coordinator-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 0 10px #00ffd5,
+0 0 20px #ff00cc;
+
+}
+
+
+/* IMAGE */
+
+.coordinator-card img{
+
+width:100px;
+height:100px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:15px;
+
+border:3px solid #00ffd5;
+
+}
+
+.role{
+
+font-size:14px;
+opacity:0.8;
+
+}
+
+.dept{
+
+font-size:13px;
+opacity:0.7;
+
+}
+
+.phone{
+
+margin-top:6px;
+font-size:14px;
+
+}
