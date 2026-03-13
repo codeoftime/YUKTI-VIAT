@@ -551,15 +551,17 @@ align-self:flex-end;
 }
 
 .coordinator-top4{
-
-grid-template-columns:1fr 1fr;
-
+grid-template-columns:1fr;
 }
 
+/* second row cards */
 .coordinator-bottom2{
-
 grid-template-columns:1fr;
+}
 
+.coordinator-card{
+width:100%;
+}
 }
 
 nav{
