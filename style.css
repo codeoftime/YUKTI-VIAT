@@ -550,16 +550,15 @@ align-self:flex-end;
 
 }
 
-.coordinator-top{
-
-grid-template-columns:1fr;
-}
-
-
-
-.coordinator-bottom{
+.coordinator-top4{
 
 grid-template-columns:1fr 1fr;
+
+}
+
+.coordinator-bottom2{
+
+grid-template-columns:1fr;
 
 }
 
