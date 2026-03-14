@@ -550,18 +550,24 @@ gap:20px;
 align-self:flex-end;
 
 }
-
 .coordinator-top4{
+display:grid;
 grid-template-columns:1fr;
 }
 
-/* second row cards */
 .coordinator-bottom2{
+display:grid;
 grid-template-columns:1fr;
 }
 
 .coordinator-card{
 width:100%;
+margin-bottom:20px;
+}
+
+.coordinator-card{
+max-width:350px;
+margin:auto;
 }
 }
 
