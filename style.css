@@ -1434,3 +1434,23 @@ margin-top:6px;
 font-size:14px;
 
 }
+
+@media (max-width:768px){
+
+/* FORCE faculty cards to stack */
+
+.coordinator-top4{
+grid-template-columns:1fr !important;
+}
+
+.coordinator-bottom2{
+grid-template-columns:1fr !important;
+}
+
+.coordinator-card{
+width:100%;
+max-width:350px;
+margin:auto;
+}
+
+}
