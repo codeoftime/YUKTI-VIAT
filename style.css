@@ -1323,6 +1323,10 @@ background:linear-gradient(45deg,#00ffd5,#ff00cc);
 
 padding:4px;
 
+box-shadow:
+0 0 10px #00ffd5,
+0 0 20px #ff00cc;
+
 }
 
 .photo-placeholder img{
