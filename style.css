@@ -436,8 +436,7 @@ backdrop-filter:blur(10px);
 }
 
 #contact p {
-    word-break: break-word
-    ;
+    word-break: break-word;
 }
 
 #contact h2{
@@ -569,7 +568,7 @@ margin-bottom:20px;
 max-width:350px;
 margin:auto;
 }
-}
+
 
 nav{
 display:flex;
