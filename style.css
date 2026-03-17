@@ -1597,3 +1597,105 @@ padding:12px 22px;
 }
 
 }
+
+/* ============================= */
+/* YUKTI 2K26 CAROUSEL */
+/* ============================= */
+
+.carousel-section{
+
+text-align:center;
+
+padding:80px 10%;
+
+}
+
+/* GRADIENT TITLE */
+
+.carousel-title{
+
+font-size:42px;
+
+margin-bottom:40px;
+
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+background-clip:text;
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* WRAPPER */
+
+.carousel-wrapper{
+
+overflow:hidden;
+
+width:100%;
+
+position:relative;
+
+}
+
+/* TRACK */
+
+.carousel-track{
+
+display:flex;
+
+gap:25px;
+
+width:max-content;
+
+animation:carouselMove 25s linear infinite;
+
+}
+
+/* IMAGES */
+
+.carousel-track img{
+
+width:320px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+transition:0.3s;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+
+}
+
+/* HOVER EFFECT */
+
+.carousel-track img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ANIMATION */
+
+@keyframes carouselMove{
+
+0%{ transform:translateX(0); }
+
+100%{ transform:translateX(-50%); }
+
+}
+
+@media (max-width:768px){
+
+.carousel-track img{
+
+width:200px;
+height:140px;
+
+}
+
+
