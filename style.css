@@ -1805,6 +1805,11 @@ margin-bottom:10px;
 
 }
 
+.ticket-left{
+text-align:left;
+color:white;
+}
+
 .ticket-desc{
 
 opacity:0.8;
@@ -1833,9 +1838,7 @@ background-clip:text;
 
 display:inline-block;
 
-margin-top:10px;
-
-padding:12px 28px;
+padding:14px 30px;
 
 border-radius:30px;
 
@@ -1847,15 +1850,29 @@ font-weight:700;
 
 text-decoration:none;
 
+transition:all 0.35s ease;   /* 🔥 smooth animation */
+
+box-shadow:
+0 0 10px rgba(0,255,213,0.4),
+0 0 20px rgba(255,0,204,0.3);
+
+cursor:pointer;
+
 }
 
 .ticket-btn:hover{
 
-transform:scale(1.08);
+transform:translateY(-3px) scale(1.05);
 
 box-shadow:
 0 0 25px rgba(0,255,213,0.7),
 0 0 40px rgba(255,0,204,0.6);
+
+}
+
+.ticket-btn:active{
+
+transform:scale(0.96);
 
 }
 
