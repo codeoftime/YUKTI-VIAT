@@ -264,12 +264,23 @@ border-radius:30px;
 text-decoration:none;
 color:white;
 font-weight:600;
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+color:black;
+
+font-weight:600;
+
+transition:0.3s;
 }
 
 
 .register-btn:hover{
-background:#00ffd5;
-color:black;
+transform:scale(1.05);
+
+box-shadow:
+0 0 15px rgba(0,255,213,0.6),
+0 0 30px rgba(255,0,204,0.5);
+
 }
 
 
@@ -1695,6 +1706,57 @@ transform:scale(1.05);
 
 width:200px;
 height:140px;
+
+}
+
+/* ============================= */
+/* INSTITUTIONAL PASS SECTION */
+/* ============================= */
+
+.institutional-pass{
+
+text-align:center;
+
+padding:80px 10%;
+
+}
+
+/* heading gradient */
+
+.institutional-pass h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+background-clip:text;
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.pass-text{
+
+font-size:18px;
+
+opacity:0.85;
+
+margin-bottom:30px;
+
+}
+
+@media (max-width:768px){
+
+.institutional-pass{
+padding:60px 20px;
+}
+
+.pass-text{
+font-size:15px;
+}
 
 }
 
