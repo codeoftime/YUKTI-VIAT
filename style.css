@@ -254,7 +254,7 @@ font-size:14px;
 }
 
 .register-btn{
-display:inline-block;
+display:block;
 width:280px;
 margin:30px auto;
 text-align:center;
@@ -1776,7 +1776,7 @@ line-height:1.6;
 
 .register-btn{
 
-display:inline-block;
+display:block;
 
 padding:14px 32px;
 
