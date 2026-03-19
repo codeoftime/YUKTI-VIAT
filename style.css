@@ -1710,18 +1710,32 @@ height:140px;
 }
 
 /* ============================= */
-/* INSTITUTIONAL PASS SECTION */
+/* INSTITUTIONAL PASS - PERFECT CENTER */
 /* ============================= */
 
 .institutional-pass{
 
-text-align:center;
-
-padding:90px 10%;
-
 display:flex;
 flex-direction:column;
+justify-content:center;
 align-items:center;
+
+text-align:center;
+
+padding:90px 20px;
+
+/* center block width */
+max-width:800px;
+margin:auto;
+
+/* subtle card look */
+background:rgba(255,255,255,0.04);
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
 
 }
 
@@ -1742,7 +1756,7 @@ background-clip:text;
 
 }
 
-/* DESCRIPTION */
+/* TEXT */
 
 .pass-text{
 
@@ -1752,25 +1766,49 @@ opacity:0.85;
 
 max-width:600px;
 
-margin-bottom:35px;
+margin:0 auto 30px auto;
 
 line-height:1.6;
 
 }
 
-/* OPTIONAL CARD LOOK (makes it less bland) */
+/* BUTTON */
 
-.institutional-pass{
+.register-btn{
 
-background:rgba(255,255,255,0.04);
+display:inline-block;
 
-border-radius:20px;
+padding:14px 32px;
 
-backdrop-filter:blur(10px);
+border-radius:30px;
 
-box-shadow:0 10px 40px rgba(0,0,0,0.4);
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+color:black;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:0.3s;
+
+box-shadow:
+0 0 10px rgba(0,255,213,0.4),
+0 0 20px rgba(255,0,204,0.3);
 
 }
+
+.register-btn:hover{
+
+transform:scale(1.07);
+
+box-shadow:
+0 0 20px rgba(0,255,213,0.7),
+0 0 35px rgba(255,0,204,0.6);
+
+}
+
+
 @media (max-width:768px){
 
 .institutional-pass{
@@ -1779,6 +1817,10 @@ padding:60px 20px;
 
 .pass-text{
 font-size:15px;
+}
+
+.institutional-pass h2{
+font-size:32px;
 }
 
 }
