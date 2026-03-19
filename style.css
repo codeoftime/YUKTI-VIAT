@@ -1868,6 +1868,7 @@ box-shadow:
 0 0 25px rgba(0,255,213,0.7),
 0 0 40px rgba(255,0,204,0.6);
 
+background:linear-gradient(45deg,#ff00cc,#00ffd5);
 }
 
 .ticket-btn:active{
