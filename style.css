@@ -1708,44 +1708,25 @@ width:200px;
 height:140px;
 
 }
+}
 
 /* ============================= */
-/* INSTITUTIONAL PASS - PERFECT CENTER */
+/* TICKET STYLE INSTITUTIONAL PASS */
 /* ============================= */
 
-.institutional-pass{
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+.pass-section{
 
 text-align:center;
-
-padding:90px 20px;
-
-/* center block width */
-max-width:800px;
-margin:auto;
-
-/* subtle card look */
-background:rgba(255,255,255,0.04);
-
-border-radius:20px;
-
-backdrop-filter:blur(10px);
-
-box-shadow:0 10px 40px rgba(0,0,0,0.4);
+padding:100px 20px;
 
 }
 
 /* TITLE */
 
-.institutional-pass h2{
+.pass-title{
 
 font-size:42px;
-
-margin-bottom:15px;
+margin-bottom:50px;
 
 background:linear-gradient(45deg,#00ffd5,#ff00cc);
 
@@ -1756,29 +1737,105 @@ background-clip:text;
 
 }
 
-/* TEXT */
+/* TICKET CARD */
 
-.pass-text{
+.ticket-card{
 
-font-size:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-opacity:0.85;
+max-width:900px;
+margin:auto;
 
-max-width:600px;
+padding:30px 40px;
 
-margin:0 auto 30px auto;
+border-radius:20px;
 
-line-height:1.6;
+background:linear-gradient(135deg,
+rgba(0,255,213,0.1),
+rgba(255,0,204,0.1)
+);
+
+backdrop-filter:blur(12px);
+
+border:1px dashed rgba(255,255,255,0.2);
+
+box-shadow:
+0 0 20px rgba(0,255,213,0.3),
+0 0 40px rgba(255,0,204,0.2);
+
+position:relative;
+
+overflow:hidden;
 
 }
 
-/* BUTTON */
+/* dotted cut effect */
 
-.register-btn{
+.ticket-card::before,
+.ticket-card::after{
 
-display:block;
+content:"";
 
-padding:14px 32px;
+position:absolute;
+
+width:20px;
+height:20px;
+
+background:black;
+
+border-radius:50%;
+
+top:50%;
+transform:translateY(-50%);
+
+}
+
+.ticket-card::before{
+left:-10px;
+}
+
+.ticket-card::after{
+right:-10px;
+}
+
+/* LEFT */
+
+.ticket-left h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+}
+
+.ticket-desc{
+
+opacity:0.8;
+font-size:14px;
+margin-bottom:15px;
+
+}
+
+.ticket-price{
+
+font-size:26px;
+font-weight:700;
+
+background:linear-gradient(45deg,#00ffd5,#ff00cc);
+
+background-clip:text;
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* RIGHT */
+
+.ticket-btn{
+
+padding:14px 30px;
 
 border-radius:30px;
 
@@ -1793,36 +1850,40 @@ text-decoration:none;
 transition:0.3s;
 
 box-shadow:
-0 0 10px rgba(0,255,213,0.4),
-0 0 20px rgba(255,0,204,0.3);
+0 0 15px rgba(0,255,213,0.4),
+0 0 25px rgba(255,0,204,0.4);
 
 }
 
-.register-btn:hover{
+.ticket-btn:hover{
 
-transform:scale(1.07);
+transform:scale(1.08);
 
 box-shadow:
-0 0 20px rgba(0,255,213,0.7),
-0 0 35px rgba(255,0,204,0.6);
+0 0 25px rgba(0,255,213,0.7),
+0 0 40px rgba(255,0,204,0.6);
 
 }
 
+/* MOBILE */
 
 @media (max-width:768px){
 
-.institutional-pass{
-padding:60px 20px;
-}
+.ticket-card{
 
-.pass-text{
-font-size:15px;
-}
-
-.institutional-pass h2{
-font-size:32px;
-}
+flex-direction:column;
+gap:20px;
+text-align:center;
 
 }
 
+.ticket-left h3{
+font-size:22px;
+}
+
+.ticket-price{
+font-size:22px;
+}
+
+}
 
