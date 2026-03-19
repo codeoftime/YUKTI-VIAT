@@ -254,16 +254,16 @@ font-size:14px;
 }
 
 .register-btn{
-display:block;
+display:inline-block;
 width:280px;
 margin:30px auto;
 text-align:center;
-padding:12px;
+padding:14px 32px;
 background:#ff00cc;
 border-radius:30px;
 text-decoration:none;
-color:white;
-font-weight:600;
+color:black;
+font-weight:700;
 background:linear-gradient(45deg,#00ffd5,#ff00cc);
 
 color:black;
@@ -275,11 +275,11 @@ transition:0.3s;
 
 
 .register-btn:hover{
-transform:scale(1.05);
+transform:scale(1.07);
 
 box-shadow:
-0 0 15px rgba(0,255,213,0.6),
-0 0 30px rgba(255,0,204,0.5);
+0 0 20px rgba(0,255,213,0.7),
+0 0 35px rgba(255,0,204,0.6);
 
 }
 
@@ -1717,17 +1717,21 @@ height:140px;
 
 text-align:center;
 
-padding:80px 10%;
+padding:90px 10%;
+
+display:flex;
+flex-direction:column;
+align-items:center;
 
 }
 
-/* heading gradient */
+/* TITLE */
 
 .institutional-pass h2{
 
-font-size:40px;
+font-size:42px;
 
-margin-bottom:20px;
+margin-bottom:15px;
 
 background:linear-gradient(45deg,#00ffd5,#ff00cc);
 
@@ -1738,16 +1742,35 @@ background-clip:text;
 
 }
 
+/* DESCRIPTION */
+
 .pass-text{
 
 font-size:18px;
 
 opacity:0.85;
 
-margin-bottom:30px;
+max-width:600px;
+
+margin-bottom:35px;
+
+line-height:1.6;
 
 }
 
+/* OPTIONAL CARD LOOK (makes it less bland) */
+
+.institutional-pass{
+
+background:rgba(255,255,255,0.04);
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+
+}
 @media (max-width:768px){
 
 .institutional-pass{
